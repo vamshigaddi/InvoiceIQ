@@ -23,7 +23,6 @@ Follow these steps to set up the project locally.
 ### Prerequisites
 
 - Python 3.8 or above
-- MongoDB (running locally or using a cloud service)
 - A **Groq API key** to access the LLaMA 3.2 Vision model (obtainable from Groq)
 
 ### Clone the repository
@@ -50,6 +49,11 @@ uvicorn main:app --reload
 ### Image
 ![InvoiceIQ](https://github.com/vamshigaddi/InvoiceIQ/blob/main/InvoiceIQ.png)
 
+### Invoice Image
+![Invoiceimage](https://github.com/vamshigaddi/InvoiceIQ/blob/main/Invoice.png)
+### Extracted text
+### Invoice Image
+![Invoiceimage](https://github.com/vamshigaddi/InvoiceIQ/blob/main/Extracted_text.png)
 ### API Endpoints
 #### GET /
 Render the homepage to upload invoice images for OCR processing.
@@ -57,4 +61,5 @@ Render the homepage to upload invoice images for OCR processing.
 #### POST /extract-invoice/
 - Description: Upload an invoice image, and the system will extract textual and structured data from it.
 - Request Body: A multipart file upload with the invoice image.
+
 
