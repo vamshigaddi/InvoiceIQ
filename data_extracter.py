@@ -152,7 +152,7 @@ class InvoiceExtractor:
 # # # # Example Usage:
 # if __name__ == "__main__":
 #     # Initialize the InvoiceExtractor with the API key
-#     api_key = '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'
+#     api_key = 
     
 #     invoice_extractor = InvoiceExtractor(api_key=api_key)
 
