@@ -1,0 +1,5 @@
+langchain-groq 
+python-dotenv
+langchain
+"fastapi[standard]"
+"pymongo[srv]"

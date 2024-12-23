@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice OCR</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <h1>Invoice OCR</h1>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="upload-card">
+            <div class="upload-icon">
+                <i class="fas fa-upload fa-3x"></i>
+            </div>
+            <h2>Upload Invoice</h2>
+            <form id="upload-form">
+                <input type="file" id="file-input" accept="image/*" required>
+                <button type="button" id="ocr-button" class="btn btn-primary">Perform OCR</button>
+            </form>
+            <div id="processing-text" style="display: none;">Processing... Please wait</div>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results-container" class="results-container" style="display: none;">
+            <div class="card image-card">
+                <h3>Uploaded Image</h3>
+                <img id="uploaded-image" src="" alt="Uploaded" class="responsive-image">
+            </div>
+            <div class="card text-card">
+                <h3>Extracted Text</h3>
+                <textarea id="extracted-text" readonly></textarea>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button id="submit-button" style="display: none;">Submit</button>
+    </div>
+
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
