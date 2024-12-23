@@ -149,21 +149,3 @@ class InvoiceExtractor:
         return response
 
 
-# # # Example Usage:
-if __name__ == "__main__":
-    # Initialize the InvoiceExtractor with the API key
-    api_key = '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'
-    
-    invoice_extractor = InvoiceExtractor(api_key=api_key)
-
-    # Path to the invoice image
-    image_path = r"C:\Users\vamsh\OneDrive\Pictures\Screenshots\Screenshot 2024-12-21 133011.png"
-
-    # Extract invoice data
-    try:
-        invoice_data = invoice_extractor.extract_invoice_data(image_path)
-        print("Extracted Invoice Data:")
-        print(type(invoice_data))
-        print(invoice_data)
-    except Exception as e:
-        print(f"Error extracting invoice data: {e}")
