@@ -1,3 +1,5 @@
 .env
 venv
 __pycache__
+dummy.py 
+data_extraction.py
